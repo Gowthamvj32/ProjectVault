@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="Img/travelisticon.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Travelistcs.css" />
+    <script defer src="Travelistjs.js"></script>
+    <title>Travelist</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="Img/Travelist.png"
+          alt="Travalist logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <div>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">Features</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Travelers view</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Open account</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="mobile-menu">
+          <ul class="mobile-links">
+            <li>
+              <a class="feature menu-box-link" href="#section--1"> Features </a>
+            </li>
+            <li>
+              <a class="feature menu-box-link" href="#section--2">
+                Travelers view
+              </a>
+            </li>
+            <li>
+              <a class="feature menu-box-link" href="#section--3">
+                Testimonials
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link nav__link--btn btn--show-modal"
+                href="#"
+                style="margin-left: -20px; font-size: 16px"
+              >
+                Open account
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">travelling</span>
+          becomes<br />
+          <span class="highlight">easier</span>
+        </h1>
+        <h4>A traveling plan for an adventurous lifestyle!</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="Img/sectionhead.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section section1" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in an adventurous travel and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="Img/sub-section-1lazy.jpg"
+          data-src="Img/sub-section-1.jpg"
+          alt="travel Acessories"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon class="icon" name="options-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">Easily Customize Your Trip</h5>
+          <p>
+            It's easy to customize your travel experience with our robust flight
+            and hotel search filter options and travel tools like flight fare
+            alerts, deal-finder calendar, and early bird deals.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon class="icon" name="airplane-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">All-Inclusive Getaways</h5>
+          <p>
+            Pay for your hotel, entertainment, meals, drinks—everything—all at
+            once, so you can put your wallet away and just enjoy the sun and
+            fun! Free cancellation on most hotels.
+          </p>
+        </div>
+        <img
+          src="Img/sub-section-2lazy.jpg"
+          data-src="Img/sub-section-2.jpg"
+          alt="laptop"
+          class="features__img lazy-img shift"
+        />
+
+        <img
+          src="Img/sub-section-3lazy.jpg"
+          data-src="Img/sub-section-3.jpg"
+          alt="Women showing tablet"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon class="icon" name="gift-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">Trip Rewards</h5>
+          <p>
+            Travel smart by earning and redeeming Trip rewards! Trvelist.com
+            will use the real-time exchange rate from a designated open source
+            to convert Trip rewards to USD at the time of transaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">TRAVELERS VIEW</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            Trusted advisor
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            Ease
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            Recognize & Connect
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <ion-icon class="icon" name="bulb-outline"></ion-icon>
+          </div>
+          <h5 class="operations__header">
+            Over 70 years of expertise with innovation at its core.
+          </h5>
+          <p>
+            We pioneered group travel in all over the world & are continuosly
+            evolving and investing in leading edge technology for a perfect
+            holiday
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <ion-icon name="git-merge-outline"></ion-icon>
+          </div>
+          <h5 class="operations__header">Flexibility and Scalability</h5>
+          <p>
+            Choose from a wide range of over a thousand holidays and
+            experiences. Special holidays catering to the cultural diversity
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <ion-icon name="accessibility-outline"> </ion-icon>
+          </div>
+          <h5 class="operations__header">Seamless Access to Everywhere</h5>
+          <p>
+            An experienced team of over 1000 travel professionals across 500+
+            touch points in world wide & NRI markets to cater to your travel
+            needs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">TRAVELLERS LOVE US!</h2>
+        <h3 class="section__header">
+          Millions of Travelist are already making their travel plan adventorus
+          with easiest navigation.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Highly recommended! Superb experience
+            </h5>
+            <blockquote class="testimonial__text">
+              I was extremely satisfied with Travelist. Travelist has proven to
+              be very courteous and helpful from the very beginning, trying to
+              organize at the best our trip to Cambodia in the eight days
+              available. The guides and drivers are very professional and
+              friendly, the accomodations simply superb.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Excellent- dont hesitate to book!
+            </h5>
+            <blockquote class="testimonial__text">
+              To start with, we appreciated the clear and easy communication
+              before the trip. It made setting up everything very easy. Once we
+              arrived, they took care of everything and made our stay quite
+              carefree. We were greeted at the airport and transported to our
+              hotel in a nicely appointed van.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Very good tour and travel agency!
+            </h5>
+            <blockquote class="testimonial__text">
+              I found the service and response of this travel agency to be
+              excellent. Easily 5-stars. My emails were promptly responded to,
+              and everyone showed up when they were supposed to. The $110
+              charged for my sedan ride to Bangkok for my family seemed like
+              very good value.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join travelist was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="Img/footer logo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link Gmail-link"
+          target="_blank"
+          href="https://Gmail.com/gowthamvj2395"
+          >Gowthamalingam</a
+        >. No claim to copyright ownership is made to underlying materials.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="overflow"></div>
+  </body>
+</html>
