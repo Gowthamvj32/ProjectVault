@@ -1,0 +1,61 @@
+/*----------------About-------------------------*/
+:root {
+  --primary-color: #fff8a6;
+  --secondary-color: #d9c13d;
+  --teritary-color: #fcd80b;
+}
+
+#about {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.location,
+.contact-info {
+  flex-basis: 90%;
+  /* Two columns with some spacing */
+  margin: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.location h3,
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.location p,
+.contact-info p {
+  font-size: 16px;
+  color: #5b5656;
+}
+
+.map {
+  flex-basis: 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.map h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 680px) {
+  .map iframe {
+    height: 250px; /* Adjust the height for mobile view */
+  }
+}
